@@ -73,9 +73,9 @@ jobs:
         
    #Login in your azure subscription using a service principal (credentials stored as GitHub Secret in repo)
     - name: Azure Login
-      uses: azure/login@v2
+      uses: azure/login@v2 
       with:
-        creds: ${{ secrets.AZURE_CREDENTIALS }}
+        creds: ${{ secrets.AZURE_CREDENTIALS_LAB05 }}
            
     # Deploy Azure WebApp using Bicep file
     - name: deploy
