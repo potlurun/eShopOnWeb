@@ -8,8 +8,8 @@ env:
   RESOURCE-GROUP: rg-eshoponweb
   LOCATION: westus2
   TEMPLATE-FILE: infra/webapp.bicep
-  SUBSCRIPTION-ID: a51ec82c-4d5b-4f90-8a77-341540c8b86f
-  WEBAPP-NAME: eshoponweb-webapp545989589
+  SUBSCRIPTION-ID: 0fa13fa9-fb45-4bd0-85e9-10a59e0f982e
+  WEBAPP-NAME: eshoponweb-webapp54639443
 
 
 jobs:
@@ -75,7 +75,7 @@ jobs:
     - name: Azure Login
       uses: azure/login@v2 
       with:
-        creds: ${{ secrets.AZURE_CREDENTIALS_LAB05 }}
+        creds: ${{ secrets.AZURE_CREDENTIALS }}
            
     # Deploy Azure WebApp using Bicep file
     - name: deploy
